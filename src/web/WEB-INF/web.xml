@@ -3,4 +3,28 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    
+    <!--从类路径下载spring配置文件,classpath关键字特指类路径下加载-->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:applicationContext.xml</param-value>
+    </context-param>
+    
+    <!--listener-->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <!--springmvc的主控selvlet-->
+    <servlet>
+        <servlet-name>homework</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>2</load-on-startup> 
+    </servlet>
+    
+    <!--springmvc处理的url-->
+    <servlet-mapping>
+        <servlet-name>homework</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
 </web-app>

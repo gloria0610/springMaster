@@ -33,10 +33,10 @@ public class UserService {
     }
 
     public UserDO getUserByUserName(String userName){
-        if(null!=userInfoMapper.getUserDOByUserName(userName)){
+       // if(null!=userInfoMapper.getUserDOByUserName(userName)){
         return userInfoMapper.getUserDOByUserName(userName).get(0);
-        } else
-            return null;
+     //   } else
+         //   return null;
     }
 
     public void loginSuccess(UserDO userDO){

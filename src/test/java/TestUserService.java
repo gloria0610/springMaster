@@ -32,9 +32,9 @@ public class TestUserService {
         assertEquals(userDO.getUserName(),"admin");
     }
 
-    @Test
-    public void getUserByUserName(){
-        UserDO userDO=userService.getUserByUserName("admin");
-        assertEquals(userDO.getUserName(),"admin");
-    }
+//    @Test
+//    public void getUserByUserName(){
+//        UserDO userDO=userService.getUserByUserName("admin");
+//        assertEquals(userDO.getUserName(),"admin");
+//    }
 }

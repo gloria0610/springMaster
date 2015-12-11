@@ -1,6 +1,8 @@
-/Users/jiangyayi/Jobs/springMaster/src/main/java/com/homework/service/UserService.java
-/Users/jiangyayi/Jobs/springMaster/src/main/java/com/homework/dao/LoginLogDAO.java
-/Users/jiangyayi/Jobs/springMaster/src/main/java/com/homework/dao/UserDAO.java
-/Users/jiangyayi/Jobs/springMaster/src/main/java/com/homework/mapper/UserInfoMapper.java
-/Users/jiangyayi/Jobs/springMaster/src/main/java/com/homework/domain/LoginLogDO.java
-/Users/jiangyayi/Jobs/springMaster/src/main/java/com/homework/domain/UserDO.java
+/Users/jiangyayi/Jobs/test/springMaster/src/main/java/com/homework/domain/LoginLogDO.java
+/Users/jiangyayi/Jobs/test/springMaster/src/main/java/com/homework/dao/UserDAO.java
+/Users/jiangyayi/Jobs/test/springMaster/src/main/java/com/homework/domain/UserDO.java
+/Users/jiangyayi/Jobs/test/springMaster/src/main/java/com/homework/mapper/UserInfoMapper.java
+/Users/jiangyayi/Jobs/test/springMaster/src/main/java/com/homework/web/LoginController.java
+/Users/jiangyayi/Jobs/test/springMaster/src/main/java/com/homework/service/UserService.java
+/Users/jiangyayi/Jobs/test/springMaster/src/main/java/com/homework/dao/LoginLogDAO.java
+/Users/jiangyayi/Jobs/test/springMaster/src/main/java/com/homework/web/LoginCommand.java
