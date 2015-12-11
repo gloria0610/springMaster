@@ -7,7 +7,7 @@
     <!--从类路径下载spring配置文件,classpath关键字特指类路径下加载-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:applicationContext.xml</param-value>
+        <param-value>classpath*:applicationContext*.xml</param-value>
     </context-param>
     
     <!--listener-->
@@ -19,12 +19,31 @@
     <servlet>
         <servlet-name>homework</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <load-on-startup>2</load-on-startup> 
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>/WEB-INF/classes/applicationContext.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
     </servlet>
     
     <!--springmvc处理的url-->
     <servlet-mapping>
         <servlet-name>homework</servlet-name>
         <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>mvc-dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>/WEB-INF/classes/applicationContext.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>mvc-dispatcher</servlet-name>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 </web-app>

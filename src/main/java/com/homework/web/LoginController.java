@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.Date;
 
 /**
@@ -20,8 +22,10 @@ public class LoginController {
     private UserService userService;
 
     @RequestMapping(value="/index.html")
-    public String loginPage(){
-        return "login";
+    public  void loginPage(HttpServletResponse response) throws IOException {
+        System.out.println("I am here");
+       response.getWriter().write("Hello World");
+        //return new ModelAndView("login");
     }
 
     @RequestMapping(value="/loginCheck.html")
